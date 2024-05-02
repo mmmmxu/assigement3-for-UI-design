@@ -3,141 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrowdShop</title>
-    
-</head>
-<body>
-    <style>
-        body {
-            background-color: #E3E3E3;
-        }
-        button {
-            white-space: nowrap;
-        }
-        .navigationbar{
-            display: flex; 
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: center; 
-            margin-bottom: 3px; 
-        }
-        .title {
-            font-family: STXihei;
-            font-size: 30px;
-            background-color: transparent;
-            border: none;
-            margin-right: 200px;
-        }
-        .home {
-            font-family: STXihei;
-            font-size: 18px;
-            background-color: transparent;
-            border:none;
-            margin-left: 60px;   
-        }
-        .shop {
-            font-family: STXihei;
-            font-size: 18px;
-            background-color: transparent;
-            border:none;
-            margin-left: 60px;    
-        }
-        .wedo {
-            font-family: STXihei;
-            font-size: 18px;
-            background-color: transparent;
-            border:none;
-            margin-left: 60px; 
-        }
-        .join {
-            font-family: STXihei;
-            font-size: 18px;
-            background-color: transparent;
-            border:none;
-            margin-left: 60px;
-        }
-        .slogen {
-            font-family: 'Times New Roman', Times, serif;
-            font-size:small;
-            font-weight: bold;
-            text-align: left;
-            margin-left: 9px;
-        }
-        img{
-            width: 50px;
-            height: auto;
-            margin-left: 60px;
-        }
-        .icons{
-            display: flex;
-            align-items: flex-end;
-            margin-left: 300px;
-        }
-        .search{
-            align-items: flex-end;
-        }
-        .portal{
-            margin-left: 20px;
-        }
-        .showcase-brand {
-        display: flex;
-        align-items: flex-start; 
-        margin-top: 20px; 
-        }
-        .showcase {
-            width:600px;
-            height: 400px;
-            background-color: #c4af97;
-            border-radius: 20px;
-        }
-        .s1{
-            width: 300px;
-            height: auto;
-            margin-top: 50px;
-            margin-left: 200px;
-        }
-        .brand{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: bold;
-            font-size: 100px;
-            align-items: flex-end;
-            margin-left: 200px;
-            margin-top: 0px;
-        }
-        .code{
-            background-color: #c4af97;
-            width: 100px;
-            height: 50px;
-            
-        }
-        .models{
-            font-size: 100px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: bold;
-            color: white;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>The Good Guys</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        }
-    </style>
-    <div class="navigationbar">
-        <button class="title">CrowdShop</button>
-        <button class="home">Home</button>
-        <button class="shop">Shop</button>
-        <button class="wedo">What we do</button>
-        <button class="join">Join the Crowd</button>
-        <div class="icons">
-            <img class="search" src="E:\UX A2\UX A3\搜索.png" width="67px" height= "34px";>
-            <img class="portal" src="E:\UX A2\UX A3\个人.png" width="67px" height= "34px";>
-        </div>  
+.top-nav {
+    background-color: white;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo1 {
+    width: 150px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.icon i {
+    font-size: 20px;
+    margin-right:20px; 
+    color:grey; 
+}
+
+.icon i:hover{
+    color: black;
+}
+
+.picture {
+    max-width: 1500px; 
+    margin: 0 auto 0; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.slideshow {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.slideshow img {
+    display: inline-block;
+    max-width: 100%; 
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.category{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category div button {
+    display: inline-flex;
+    border-radius: 15px;
+    border: none;
+    background: #83B1DC;
+    width: 160px;
+    height: 128px;
+    margin-left: 50px;
+    min-width: 135px;
+    padding: 24px 52px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.category div button i{
+    font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="container">
+            <div class="logo">
+                <img class="logo1" src="E:\UX A2\UX A3\logo.png">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav class="navbar">
+                <ul class="list">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <i class="fas fa-heart"></i> 
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="picture">
+        <div class="slideshow">
+            <img src="E:\UX A2\UX A3\computer.png" class="slide1">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
-    <p class="slogen">Shop together Save together</p>
-    <div class="showcase-brand">
-        <div class="showcase">
-            <img class="s1" src="E:\UX A2\4.png">
+    <div class="category">
+        <div class="buttons">
+            <button class="phones"><i class="fa-solid fa-mobile-button"></i>Phones</button>
+            <button class="SWatches"><i class="fa-solid fa-clock"></i>Smart Watches</button>
+            <button class="cameras"><i class="fas fa-camera"></i>Cameras</button>
+            <button class="hphones"><i class="fas fa-headphones"></i>Headphones</button>
+            <button class="computers"><i class="fa-solid fa-desktop"></i>Computers</button>
+            <button class="gaming"><i class="fa-solid fa-gamepad"></i>Gamings</button>
         </div>
-        <p class="brand">Breville</p>
-        <div class="code">
-            <p class="models">BNE800BSS</p>
-        </div>
+        
     </div>
     
 </body>
