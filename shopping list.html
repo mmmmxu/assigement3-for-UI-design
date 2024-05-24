@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-zbwh5o9l3qzZ83oRJvhkE1M6zA20J9pJD9JZizxjUEtcQ/QcGRJEWINDVJv1/JHb" crossorigin="anonymous">
+    <title>The Good Guys - Shopping</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+background-color: white;
+color: #fff;
+padding: 10px 0;
+margin: 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo1 {
+width: 150px;
+height: auto;
+}
+
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.navbar ul li {
+display: inline;
+}
+
+.navbar ul li a {
+color: grey;
+text-decoration: none;
+padding: 10px;
+}
+
+.navbar ul li a:hover {
+color: black;
+}
+
+.search-container {
+position: relative;
+}
+
+.search-container input[type="text"] {
+padding: 10px;
+width: 300px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-right: 10px;
+}
+
+.icon {
+display: flex;
+align-items: center;
+margin-left: 10px; 
+cursor: pointer;
+}
+
+.icon i {
+font-size: 20px;
+margin-right:20px; 
+color:grey; 
+}
+
+.icon i:hover{
+color: black;
+}
+.breadcrumb {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #999;
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.filter-container {
+    width: 200px;
+}
+
+.filter-category {
+    margin-bottom: 20px;
+}
+
+.filter-category h3 {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.filter-content {
+    display: none;
+    padding-left: 10px;
+}
+
+.filter-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.products-container {
+    flex: 1;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-count {
+    font-size: 18px;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sort-container i {
+    margin-left: 5px;
+}
+
+.products {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+}
+
+.product {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 9px;
+    text-align: center;
+    position: relative;
+    width: 300px; 
+}
+
+.product img {
+    width:100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.product h3 {
+    color: black;
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1966AF;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.product .fa-heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #e6e6e6;
+}
+ 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination a,
+.pagination span {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination .active {
+    background-color: #000;
+    color: #fff;
+    border:none;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .prev,
+.pagination .next {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.pagination .dots {
+    color: #888;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="container">
+        <div class="logo">
+            <img class="logo1" src="E:\UX A2\UX A3\logo.png">
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav class="navbar">
+            <ul class="list">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <i class="fas fa-heart"></i> 
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="breadcrumb">
+            <a href="#">Home</a> > <a href="#">Smartphones</a>
+        </div>
+        <div class="content-container">
+          <aside class="filter-container">
+            <div class="filter-category">
+                <h3 onclick="toggleSection(this)">Brand</h3>
+                <div class="filter-content">
+                    <input type="text" placeholder="Search...">
+                    <label><input type="checkbox"> Apple</label>
+                    <label><input type="checkbox"> Samsung</label>
+                    <label><input type="checkbox"> Xiaomi</label>
+                    <label><input type="checkbox"> Oppo</label>
+                    <label><input type="checkbox"> Honor</label>
+                    <label><input type="checkbox"> More...</label>
+                </div>
+            </div>
+            <div class="filter-category">
+                <h3 onclick="toggleSection(this)">Battery capacity</h3>
+                <div class="filter-content">
+                    <label><input type="checkbox"> 3000 mAh - 4000 mAh</label>
+                    <label><input type="checkbox"> 4000 mAh - 5000 mAh</label>
+                    <label><input type="checkbox"> 5000 mAh - 6000 mAh</label>
+                </div>
+            </div>
+            <div class="filter-category">
+                <h3 onclick="toggleSection(this)">Screen type</h3>
+                <div class="filter-content">
+                    <label><input type="checkbox"> LCD</label>
+                    <label><input type="checkbox"> OLED</label>
+                    <label><input type="checkbox"> AMOLED</label>
+                </div>
+            </div>
+            <div class="filter-category">
+                <h3 onclick="toggleSection(this)">Screen diagonal</h3>
+                <div class="filter-content">
+                    <label><input type="checkbox"> 5.5" - 6.0"</label>
+                    <label><input type="checkbox"> 6.0" - 6.5"</label>
+                    <label><input type="checkbox"> 6.5" - 7.0"</label>
+                </div>
+            </div>
+            <div class="filter-category">
+                <h3 onclick="toggleSection(this)">Protection class</h3>
+                <div class="filter-content">
+                    <label><input type="checkbox"> IP67</label>
+                    <label><input type="checkbox"> IP68</label>
+                </div>
+            </div>
+            <div class="filter-category">
+                <h3 onclick="toggleSection(this)">Built-in memory</h3>
+                <div class="filter-content">
+                    <label><input type="checkbox"> 64 GB</label>
+                    <label><input type="checkbox"> 128 GB</label>
+                    <label><input type="checkbox"> 256 GB</label>
+                </div>
+            </div>
+        </aside>
+            <div class="products-container">
+              <div class="product-header">
+                  <div class="product-count">Selected Products: 85</div>
+                  <div class="sort-container">
+                      <div class="dropdown">
+                          <button class="dropbtn">By rating <i class="fa fa-caret-down"></i></button>
+                          <div class="dropdown-content">
+                              <a href="#">Price</a>
+                              <a href="#">Name</a>
+                              <a href="#">Rating</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="products">
+                    <div class="product">
+                        <img src="E:/UX A2/UX A3/gold.png" alt="Product 1">
+                        <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+                        <h3>$1437</h3>
+                        <button>Buy Now</button>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product">
+                        <img src="E:/UX A2/UX A3/gold.png" alt="Product 2">
+                        <p>Apple iPhone 11 128GB White (MQ233)</p>
+                        <h3>$510</h3>
+                        <button>Buy Now</button>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product">
+                        <img src="E:/UX A2/UX A3/gold.png" alt="Product 3">
+                        <p>Apple iPhone 11 128GB White (MQ233)</p>
+                        <h3>$550</h3>
+                        <button>Buy Now</button>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product">
+                        <img src="E:/UX A2/UX A3/gold.png" alt="Product 4">
+                        <p>Apple iPhone 14 Pro 1TB Gold (MQ233)</p>
+                        <h3>$1499</h3>
+                        <button>Buy Now</button>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product">
+                        <img src="E:/UX A2/UX A3/gold.png" alt="Product 5">
+                        <p>Apple iPhone 14 Pro 1TB Gold (MQ233)</p>
+                        <h3>$1399</h3>
+                        <button>Buy Now</button>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product">
+                        <img src="E:/UX A2/UX A3/gold.png" alt="Product 6">
+                        <p>Apple iPhone 14 Pro 1TB 512GB Deep Purple (MQ233)</p>
+                        <h3>$1600</h3>
+                        <button>Buy Now</button>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+    <div class="pagination">
+      <a href="#" class="prev">&laquo;</a>
+      <a href="#" class="page active">1</a>
+      <a href="#" class="page">2</a>
+      <a href="#" class="page">3</a>
+      <span class="dots">...</span>
+      <a href="#" class="page">12</a>
+      <a href="#" class="next">&raquo;</a>
+  </div>
+  <script>
+    function toggleSection(header) {
+    var content = header.nextElementSibling;
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+
+  </script>
+</body>
+</html>
