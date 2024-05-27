@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>The Good Guys</title>
+    <link rel="stylesheet" type="text/css" href="E:\UX A2\UX A3\UX A3 CSS-homepage.css">
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="container">
+            <div class="logo">
+                <img class="logo1" src="E:\UX A2\UX A3\logo.png">
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search..." oninput="filterProducts()">
+            </div>
+            <nav class="navbar">
+                <ul class="list">
+                    <li><a href="E:\UX A2\UX A3\shopping list.html">Products</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <i class="fas fa-heart"></i> 
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="picture">
+        <div class="slideshow">
+            <img src="E:\UX A2\UX A3\computer.png" class="slide1" id="currentSlide">
+            <img src="E:\UX A2\UX A3\ipad.png" class="slide2" id="slide2">
+            <img src="E:\UX A2\UX A3\ref.png" class="slide3" id="slide3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="category">
+        <div class="buttons">
+            <button class="phones"><i class="fa-solid fa-mobile-button" onclick="location.href='E:/UX A2/UX A3/shopping list.html'"></i>Phones</button>
+            <button class="SWatches"><i class="fa-solid fa-clock"></i>Smart Watches</button>
+            <button class="cameras"><i class="fas fa-camera"></i>Cameras</button>
+            <button class="hphones"><i class="fas fa-headphones"></i>Headphones</button>
+            <button class="computers"><i class="fa-solid fa-desktop"></i>Computers</button>
+            <button class="gaming"><i class="fa-solid fa-gamepad"></i>Gamings</button>
+            <script src="script.js"></script>
+        </div>
+    </div>
+    <div class="itemshow">
+        <div class="itembutton">
+            <button>New Arrival</button>
+            <button>Bestseller</button>
+            <button>Feture Products</button>
+         </div>
+    </div>
+    <div class="productcontainer">
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\Iphone 14 pro 1.png" alt="Product 1">
+                <h3>Apple iPhone 14 Pro Max </h3>
+                <p>128GB Deep Purple (MQ9T3RX/A)</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\camera.png" alt="Product 2">
+                <h3>Blackmagic Pocket Cinema </h3>
+                <p>Camera 6k</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\WATCH.png" alt="Product 3">
+                <h3>Apple Watch Series 9 </h3>
+                <p>GPS 41mm Starlight Aluminium Case</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\HEADPPHONE.png" alt="Product 4">
+                <h3>AirPods Max </h3>
+                <p>Silver</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\watch.png" alt="Product 5">
+                <h3>Samsung Galaxy Watch6  </h3>
+                <p>Classic 47mm Black</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\samsung.png" alt="Product 6">
+                <h3>Galaxy Z Fold5 Unlocked </h3>
+                <p>256GB | Phantom Black</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\earphone.png" alt="Product 7">
+                <h3>Galaxy Buds </h3>
+                <p>FE Graphite</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-item">
+                <img src="E:\UX A2\UX A3\pad.png" alt="Product 8">
+                <h3>Apple iPad 9 10.2" </h3>
+                <p>64GB Wi-Fi Silver (MK2L3)</p>
+                <button>Buy Now</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>    
+    </div>
+    <div class="footer">
+        <div class="box">
+            <img src="E:\UX A2\UX A3\podsandwatch.png">
+            <div class="textcontent">
+                <h3>Popular Products</h3>
+                <p>iPad combines a magnificent 10.2-inch Retina display, 
+                incredible performance, multitasking and ease of use.</p>
+                <button>Shop Now</button>
+            </div>
+            
+        </div>
+        <div class="box">
+            <img src="E:\UX A2\UX A3\ipads.png">
+            <div class="textcontent">
+                <h3>IPad Pro</h3>
+                <p>iPad combines a magnificent 10.2-inch Retina display, 
+                incredible performance, multitasking and ease of use.</p>
+                <button>Shop Now</button>
+            </div>
+            
+        </div>
+        <div class="box">
+            <img src="E:\UX A2\UX A3\phone.png">
+            <div class="textcontent">
+                <h3>Samsung Galaxy </h3>
+                <p>iPad combines a magnificent 10.2-inch Retina display, 
+                incredible performance, multitasking and ease of use.</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="E:\UX A2\UX A3\mac.png">
+            <div class="textcontent">
+                <h3>Macbook Pro</h3>
+                <p>iPad combines a magnificent 10.2-inch Retina display, 
+                incredible performance, multitasking and ease of use.</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+    document.querySelector('.phones').addEventListener('click', function() {
+        window.location.href = 'E:/UX A2/UX A3/shopping list.html';
+    });
+
+    var slides = document.querySelectorAll('.slideshow img');
+    var currentSlideIndex = 0;
+
+    function prevSlide() {
+        slides[currentSlideIndex].style.display = 'none';
+        currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+        slides[currentSlideIndex].style.display = 'block';
+    }
+
+    function nextSlide() {
+        slides[currentSlideIndex].style.display = 'none';
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        slides[currentSlideIndex].style.display = 'block';
+    }
+
+    
+    </script>
+</body>
+</html>
