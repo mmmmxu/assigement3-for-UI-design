@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.steps {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: inline-block;
+    margin: 0 10px;
+    color: #bbb;
+}
+
+.step.active {
+    color: #333;
+}
+
+.shipping-container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    width: 50%;
+}
+
+.method {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    position: relative;
+}
+
+.method label {
+    width: 100%;
+    cursor: pointer;
+}
+
+.method span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.select-date {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back, .next {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.back {
+    background-color: #ccc;
+}

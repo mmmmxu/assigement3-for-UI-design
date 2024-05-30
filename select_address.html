@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Address</title>
+    <link rel="stylesheet" href="select_address_style.css">
+</head>
+<body>
+    <div class="steps">
+        <span class="step active">Step 1 Address</span>
+        <span class="step">Step 2 Shipping</span>
+    </div>
+    <div class="address-container">
+        <h2>Select Address</h2>
+        <div class="address">
+            <input type="radio" id="address1" name="address" checked>
+            <label for="address1">
+                <span class="name-tag">Resente <span class="tag">HOME</span></span>
+                <p>2118 Recity - Syracuse, Connecticut 5000</p>
+                <p>(209) xxx-0104</p>
+            </label>
+            <button class="remove">✕</button>
+        </div>
+        <div class="address">
+            <input type="radio" id="address2" name="address">
+            <label for="address2">
+                <span class="name-tag">Cresy <span class="tag">OFFICE</span></span>
+                <p>2715 Jose Rode, South Dakota 5000</p>
+                <p>(704) xxx-0127</p>
+            </label>
+            <button class="remove">✕</button>
+        </div>
+        <div class="add-new">
+            <button class="add-button">+ Add New Address</button>
+        </div>
+    </div>
+    <div class="navigation">
+        <button class="back">Back</button>
+        <button class="next">Next</button>
+    </div>
+</body>
+</html>

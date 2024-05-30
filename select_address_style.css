@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.steps {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: inline-block;
+    margin: 0 10px;
+    color: #bbb;
+}
+
+.step.active {
+    color: #333;
+}
+
+.address-container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    width: 50%;
+}
+
+.address {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    position: relative;
+}
+
+.name-tag {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tag {
+    background: #ddd;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.add-new {
+    text-align: center;
+    padding: 20px;
+}
+
+.add-button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back, .next {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.back {
+    background-color: #ccc;
+}

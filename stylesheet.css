@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product-detail {
+    display: flex;
+    margin: 20px;
+}
+
+.product-images img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.product-info {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.price {
+    font-size: 2em;
+    color: red;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.color-option {
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.storage-options button {
+    margin-right: 10px;
+}
+
+.specs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spec-item {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.spec-item img {
+    margin-right: 5px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delivery-info span {
+    display: inline-block;
+    margin-right: 10px;
+}
