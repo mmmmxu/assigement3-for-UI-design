@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Method</title>
+    <link rel="stylesheet" href="shipping_style.css">
+</head>
+<body>
+    <div class="steps">
+        <span class="step">Step 1 Address</span>
+        <span class="step active">Step 2 Shipping</span>
+    </div>
+    <div class="shipping-container">
+        <h2>Shipment Method</h2>
+        <div class="method">
+            <input type="radio" id="free" name="shipping" checked>
+            <label for="free">
+                <span>Free</span>
+                <p>pick up in store</p>
+            </label>
+        </div>
+        <div class="method">
+            <input type="radio" id="fast" name="shipping">
+            <label for="fast">
+                <span>$8.50</span>
+                <p>Get your delivery as soon as possible</p>
+            </label>
+        </div>
+        <div class="method">
+            <input type="radio" id="schedule" name="shipping">
+            <label for="schedule">
+                <span>Schedule</span>
+                <p>Pick a date when you want to get your delivery</p>
+                <button class="select-date">Select Date</button>
+            </label>
+        </div>
+    </div>
+    <div class="navigation">
+        <button class="back">Back</button>
+        <button class="next">Next</button>
+    </div>
+</body>
+</html>
