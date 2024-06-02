@@ -155,7 +155,7 @@ body {
 }
 
 .product-images img {
-    width: 100px; /* 根据需要调整 */
+    width: 100px; 
 }
 
 .product-info {
@@ -205,11 +205,25 @@ body {
 }
 
 .delivery-info span {
-    display: block; /* 更改为块元素以实现换行 */
+    display: block; 
     margin-top: 10px;
 }
 
+/* phone size picture */
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .product-images img {
+        width: 200px; 
+    }
+
+    .product-info {
+        width: 100%;
+    }
+}
 
 
 
