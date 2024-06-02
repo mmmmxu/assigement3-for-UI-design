@@ -92,38 +92,37 @@ body {
     width: 70%;
 }
 
+.method {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
 .method label {
     display: flex;
-    align-items: center;   
-    flex-wrap: wrap;    
-    cursor: pointer;
+    align-items: center;
     width: 100%;
 }
 
-.method span, .method p {
-    flex: 1 1 100%;       
-    text-align: left;    
+.method-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.method-details span, .method-details p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.method-details .date, .method-details .select-date {
+    margin-left: auto;
 }
 
 .select-date {
-    margin-top: 10px;
-    color: #ccc;
-    background-color: #fff;
-    border: none;
+    padding: 5px 10px;
     cursor: pointer;
-    margin-left: auto;    
-    padding: 10px 20px;
-}
-
-
-.select-date {
-    margin-top: 10px;
-    color: #ccc;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;    
-    padding: 10px 20px; 
 }
 
 .navigation {
