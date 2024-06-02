@@ -215,12 +215,12 @@ body {
 }
 
 .actions button {
-    background-color: blue;
+    background-color: #1966AF;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-right: 10px;
+    width：25px ;
     cursor: pointer;
 }
 
