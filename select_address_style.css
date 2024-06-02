@@ -124,11 +124,11 @@ body {
 
 .navigation {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .back, .next {
-    width: 700px;
+    width: 650px;
     padding: 10px 20px;
     margin: 5px;
     background-color: #1966AF;
@@ -136,6 +136,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 .back {
