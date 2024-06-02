@@ -155,10 +155,12 @@ add-new {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+    margin: 0 auto;
 }
 .icon1 {
-    width: 70%;               
-    height: 20px;        
+    margin: 0 auto;
+    width: 50%;               
+    height: 15px;        
 }
 
 
