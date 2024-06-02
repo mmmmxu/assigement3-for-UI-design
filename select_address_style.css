@@ -128,14 +128,14 @@ body {
 }
 
 .back, .next {
-    width: 500px;
+    width: 700px;
     padding: 10px 20px;
     margin: 5px;
     background-color: #1966AF;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .back {
