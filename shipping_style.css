@@ -110,9 +110,8 @@ body {
 
 .select-date {
     margin-top: 10px;
-    background: #fff;
     color: #ccc;
-    background-color: #1966AF;
+    background-color: #fff;
     border: none;
     cursor: pointer;
     margin-left: auto;    
