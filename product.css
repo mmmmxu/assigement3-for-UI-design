@@ -217,30 +217,41 @@ body {
 }
 
 .storage-options button {
-    margin-right: 10px;
-    background-color: #ddd;
-    border: none;
-    padding: 5px 10px;
+    background-color: #fff; 
+    color: black; /* Text color */
+    border: 1px solid #000; /* Add slight border for better visibility */
+    padding: 10px 20px; /* Padding for better touch target */
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    transition: background-color 0.3s;
+    margin: 5px; /* Ensure some spacing around buttons */
+    width: auto; /* Auto width based on content */
+    min-width: 70px; /* Minimum width */
+    text-align: center; /* Center text inside button */
+    display: inline-block; /* Inline-block for better control */
+    font-size: 14px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    !important; /* Force these styles to take precedence */
 }
 
 .storage-options button.active {
-    background-color: #1966AF; /* Active state background */
-    color: white; /* Active state text color */
+    background-color: #1966AF !important; /* Blue background for active */
+    color: white !important; /* White text for better visibility */
 }
 
-
 .actions button {
-    background-color: #1966AF;
+    background-color: #1966AF !important; /* Consistent theme color */
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    margin-right: 10px;
+    padding: 12px 24px; 
     cursor: pointer;
+    margin-right: 10px;
     width: auto; /* Adjust width to content */
-    font-size: 16px; /* Suitable font size for readability */
+    min-width: 100px; /* Minimum width for better visibility */
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    !important; /* Ensure these styles apply */
 }
 
 @media (max-width: 768px) {
