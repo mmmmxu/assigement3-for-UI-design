@@ -34,31 +34,40 @@
     <div class="steps">
         <img class="head" src="folder/Steps-1.png">
     </div>
-    <div class="shipping-container">
-        <h2>Shipment Method</h2>
-        <div class="method">
-            <input type="radio" id="free" name="shipping" checked>
-            <label for="free">
+<div class="shipping-container">
+    <h2>Shipment Method</h2>
+    <div class="method">
+        <input type="radio" id="free" name="shipping" checked>
+        <label for="free">
+            <div class="method-details">
                 <span>Free</span>
                 <p>pick up in store</p>
-            </label>
-        </div>
-        <div class="method">
-            <input type="radio" id="fast" name="shipping">
-            <label for="fast">
+                <div class="date">17 Oct, 2023</div>
+            </div>
+        </label>
+    </div>
+    <div class="method">
+        <input type="radio" id="fast" name="shipping">
+        <label for="fast">
+            <div class="method-details">
                 <span>$8.50</span>
                 <p>Get your delivery as soon as possible</p>
-            </label>
-        </div>
-        <div class="method">
-            <input type="radio" id="schedule" name="shipping">
-            <label for="schedule">
+                <div class="date">1 Oct, 2023</div>
+            </div>
+        </label>
+    </div>
+    <div class="method">
+        <input type="radio" id="schedule" name="shipping">
+        <label for="schedule">
+            <div class="method-details">
                 <span>Schedule</span>
                 <p>Pick a date when you want to get your delivery</p>
                 <button class="select-date">Select Date</button>
-            </label>
-        </div>
+            </div>
+        </label>
     </div>
+</div>
+
     <div class="navigation">
         <button onclick="location.href='select_address.html';"class="back">Back</button>
         <button onclick="location.href='confirmation.html';"class="next">Next</button>
