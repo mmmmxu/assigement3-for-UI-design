@@ -4,6 +4,70 @@ body {
     padding: 20px;
     background: #f4f4f4;
 }
+.top-nav {
+    background-color: white;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo1 {
+    width: 150px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.icon img {
+    font-size: 20px;
+    margin-right:20px; 
+    color:grey; 
+}
 
 .steps {
     text-align: center;
