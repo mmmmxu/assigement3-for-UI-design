@@ -142,34 +142,5 @@ body {
     background-color: #ccc;
 }
 
-.add-new {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;  
-}
-
-.add-button {
-    background-color: #007bff;  
-    color: #fff;              
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;               
-    border-radius: 5px;         
-    cursor: pointer;            
-    display: inline-flex;        
-    align-items: center;       
-    justify-content: center;   
-    gap: 10px;                  
-}
-
-.add-button:hover {
-    background-color: #0056b3;  
-}
-
-.icon1 {
-    width: 20px;              
-    height: auto;             
-}
-
 
 
