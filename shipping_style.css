@@ -92,23 +92,29 @@ body {
     width: 70%;
 }
 
-.method {
-    display: flex; 
-    flex-direction: column; 
-    border-bottom: 1px solid #eee;
-    padding: 10px;
-    position: relative;
-}
-
 .method label {
-    width: 100%;
+    display: flex;
+    align-items: center;   
+    flex-wrap: wrap;    
     cursor: pointer;
+    width: 100%;
 }
 
-.method span {
-    font-size: 16px;
-    font-weight: bold;
+.method span, .method p {
+    flex: 1 1 100%;       
+    text-align: left;    
 }
+
+.select-date {
+    margin-top: 10px;
+    color: #ccc;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;    
+    padding: 10px 20px;
+}
+
 
 .select-date {
     margin-top: 10px;
