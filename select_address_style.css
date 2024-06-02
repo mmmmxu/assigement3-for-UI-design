@@ -145,12 +145,9 @@ body {
 .add-new {
     text-align: center;
     padding: 20px;
-    background-color: #f4f4f4; 
 }
 
-.add-button {
-    background-color: #007bff;  
-    color: #fff;              
+.add-button {           
     padding: 10px 20px;
     font-size: 16px;
     border: none;              
@@ -162,13 +159,11 @@ body {
     gap: 10px;                   
 }
 
-.add-button:hover {
-    background-color: #0056b3; 
-}
+
 
 .icon1 {
-    width: 20px;               
-    height: auto;        
+    width: 1000px;               
+    height: 40px;        
 }
 
 
