@@ -119,16 +119,19 @@ body {
 
 .navigation {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .back, .next {
+    width: 450px;
     padding: 10px 20px;
     margin: 5px;
-    background-color: #007bff;
+    background-color: #1966AF;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 .back {
