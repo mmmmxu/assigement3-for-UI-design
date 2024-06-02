@@ -153,6 +153,7 @@ body {
 .add-button {
     background: #fff;
     color: #000;
+    border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
@@ -160,7 +161,7 @@ body {
 }
 
 .icon1 {
-    width: 75%;      
+    width: 1200px;      
     height: 20px;          
     object-fit: contain;   
 }
