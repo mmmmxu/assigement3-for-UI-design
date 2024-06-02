@@ -93,6 +93,8 @@ body {
 }
 
 .method {
+    display: flex; 
+    flex-direction: column; 
     border-bottom: 1px solid #eee;
     padding: 10px;
     position: relative;
