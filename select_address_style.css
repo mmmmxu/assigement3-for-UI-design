@@ -136,14 +136,22 @@ body {
 }
 
 .navigation {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
     text-align: center;
     margin-top: 20px;
+    width: 100%; 
 }
 
 .back, .next {
+    width: 48%; 
     padding: 10px 20px;
     margin: 5px;
     background-color: #007bff;
+    background-image: url('folder/Button-1.png'); 
+    background-size: cover; 
+    background-position: center; 
     color: white;
     border: none;
     cursor: pointer;
