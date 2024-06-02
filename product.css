@@ -111,6 +111,8 @@ body {
     margin-left: 0px;
     margin-top: 60px;
     text-align: center;
+    width: 160px;           
+    height: 50px;     
 }
 
 .spec-item {
@@ -130,14 +132,6 @@ body {
 .spec-item img {
     width: 50px; 
     height: auto; 
-}
-
-.category {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    max-width: 1200px;
-    margin: 0 auto; 
 }
 
 
@@ -230,23 +224,24 @@ body {
     display: inline-block; /* Inline-block for better control */
     font-size: 14px; /* Adjust font size */
     border-radius: 5px; /* Rounded corners */
-    !important; /* Force these styles to take precedence */
+
 }
 
 .storage-options button.active {
-    background-color: #1966AF !important; /* Blue background for active */
-    color: white !important; /* White text for better visibility */
+    background-color: #1966AF; 
+    color: white ; 
 }
 
 .actions button {
-    background-color: #1966AF !important; /* Consistent theme color */
+    background-color: #1966AF; 
     color: white;
     border: none;
     border-radius: 5px;
     padding: 12px 24px; 
     cursor: pointer;
     margin-right: 10px;
-    width: auto; /* Adjust width to content */
+    width: 250px; 
+    height: 40px;
     min-width: 100px; /* Minimum width for better visibility */
     text-align: center;
     display: inline-block;
