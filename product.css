@@ -146,6 +146,7 @@ body {
     align-items: flex-start;
     gap: 20px;
     margin-top: 20px;
+    
 }
 
 .product-images {
@@ -153,10 +154,12 @@ body {
     flex-direction: column;
     gap: 10px;
     align-items: center; /* Center align the smaller images */
+    width: 75px;
+    height: 93px;  
 }
 
 .product-images img {
-    width: 100px; 
+    width: auto; 
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -177,12 +180,13 @@ body {
     border-radius: 8px;     
     box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
     max-width: 800px;       
-    width: 100%;            
+    width: 410px;
+    height: 516px;         
 }
 
 .product-image img {
-    width: 100%;           
-    height: auto;          
+    width: 410px;
+    height: 516px;        
     display: block;         
 }
 
