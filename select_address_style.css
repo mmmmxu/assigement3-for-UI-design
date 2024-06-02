@@ -142,25 +142,19 @@ body {
     background-color: #ccc;
 }
 
-.add-new {
+add-new {
     text-align: center;
     padding: 20px;
 }
 
-.add-button {           
+.add-button {
+    background: #000;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
+    cursor: pointer;
     font-size: 16px;
-    border: none;              
-    border-radius: 5px;        
-    cursor: pointer;            
-    display: inline-flex;        
-    align-items: center;       
-    justify-content: center;    
-    gap: 10px;                   
 }
-
-
-
 .icon1 {
     width: 1000px;               
     height: 40px;        
