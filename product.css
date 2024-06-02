@@ -108,14 +108,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 0px;
-    margin-top: 60px;
+    margin: 60px auto 0 auto; 
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
+    width: 528px;  
 }
 
 .spec-item {
@@ -124,19 +122,20 @@ body {
     justify-content: center;
     border-radius: 15px;
     background: #83B1DC;
-    width: 150px;
+    width: 168px;  
     height: 64px;
-    margin: 10px;
+    margin: 5px; 
     padding: 10px;
-    gap: 8px;
     cursor: pointer;
-    overflow: hidden;  
+    flex: 0 0 168px;  
 }
 
 .spec-item img {
-    width: 50px;
-    height: auto;
+    width: auto; 
+    height: 30px;  
+    max-width: none;  
 }
+
 
 
 
