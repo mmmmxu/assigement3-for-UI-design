@@ -96,7 +96,7 @@ body {
 .method {
     border-bottom: 1px solid #eee;
     padding: 100px ;    
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
