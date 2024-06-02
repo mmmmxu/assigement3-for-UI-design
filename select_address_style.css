@@ -145,6 +145,7 @@ body {
 add-new {
     text-align: center;
     padding: 20px;
+    margin: 0 auto;
 }
 
 .add-button {
