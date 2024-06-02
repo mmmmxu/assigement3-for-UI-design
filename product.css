@@ -240,8 +240,8 @@ body {
     padding: 12px 24px; 
     cursor: pointer;
     margin-right: 10px;
-    width: 250px; 
-    height: 40px;
+    width: 260px; 
+    height: 56px;
     min-width: 100px; /* Minimum width for better visibility */
     text-align: center;
     display: inline-block;
