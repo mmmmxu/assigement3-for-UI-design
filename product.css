@@ -158,6 +158,11 @@ body {
 }
 
 .product-images img {
+    width: auto; 
+    height: auto; 
+}
+
+.unique-image {
     width: 75px; 
     height: 93px; 
 }
