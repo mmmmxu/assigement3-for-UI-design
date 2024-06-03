@@ -164,7 +164,8 @@ body {
     .container, .shipping-container, .navigation {
         width: 100%;      
         padding: 0 10px;  
-        margin: 0 auto;   
+        margin: 0 auto;  
+        
     }
 
     .navbar ul li {
@@ -180,6 +181,8 @@ body {
     width: 100%;      
     height: auto;     
     max-width: 400px;  
-}
-
+    }
+    .method-details {
+    flex-direction: column;
+    }
 }
