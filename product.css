@@ -265,9 +265,8 @@ body {
 }
 
 
-.delivery-info span {
-    display: block; 
-    margin-top: 10px;
+.delivery-info img {
+    margin-top: 5px;
 }
 
 /* phone size picture */
