@@ -145,7 +145,7 @@ body {
     align-items: flex-start;
     gap: 20px;
     margin-top: 20px;
-    background: #fff
+    background: #fff；
     margin-bottom: 50px;
 }
 
@@ -234,8 +234,8 @@ body {
     margin: 5px; /* Ensure some spacing around buttons */
     width: auto; /* Auto width based on content */
     min-width: 70px; /* Minimum width */
-    text-align: center; /* Center text inside button */
-    display: inline-block; /* Inline-block for better control */
+    text-align: center; 
+    display: inline-block; 
     font-size: 14px; /* Adjust font size */
     border-radius: 5px; /* Rounded corners */
 
@@ -256,17 +256,16 @@ body {
     margin-right: 10px;
     width: 260px; 
     height: 56px;
-    min-width: 100px; /* Minimum width for better visibility */
+    min-width: 100px; 
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    !important; /* Ensure these styles apply */
 }
 
 @media (max-width: 768px) {
     .actions button {
-        width: 100%; /* Full width on smaller screens */
-        margin-top: 10px; /* Add top margin for better spacing */
+        width: 100%; 
+        margin-top: 10px; 
     }
 }
 
@@ -362,6 +361,8 @@ body {
 }
 
 .details-container {
+    margin-up: 20px;
+    background: #fff;
     width: 80%;
     margin: 0 auto;
     padding: 20px;
@@ -413,6 +414,7 @@ body {
     align-items: center;
     position: relative;
     gap: 20px; 
+    background: #fff;
 }
 
 .product-grid {
