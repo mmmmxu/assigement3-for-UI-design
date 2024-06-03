@@ -101,6 +101,7 @@ body {
     align-items: center;
     justify-content: space-between; 
     flex-wrap: nowrap;  
+    align-items: center; 
 }
 
 .method label {
@@ -113,7 +114,8 @@ body {
 .method-details {
     display: flex;
     flex-grow: 1;                 
-    margin-right: 10px;     
+    margin-right: 10px;   
+    align-items: center;
 }
 
 .method-details span {
@@ -121,6 +123,7 @@ body {
     font-weight: bold;
     flex-shrink: 0;  
     margin-right: 20px; 
+    align-items: center;
 }
 
 .method-details p {
