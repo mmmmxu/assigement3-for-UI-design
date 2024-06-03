@@ -167,4 +167,13 @@ body {
     object-fit: contain;   
 }
 
+@media (max-width: 390px) {
+    .icon, .steps {
+        padding: 0 10px; 
+    }
+
+    .icon img, .steps img {
+        max-width: 85%;
+    }
+}
 
