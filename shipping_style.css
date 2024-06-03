@@ -159,3 +159,27 @@ body {
 .back {
     background-color: #ccc;
 }
+
+@media (max-width: 390px) {
+    .container, .shipping-container, .navigation {
+        width: 100%;      
+        padding: 0 10px;  
+        margin: 0 auto;   
+    }
+
+    .navbar ul li {
+        display: block;   
+        margin-top: 5px;  
+    }
+
+    .back, .next {
+        width: 100%;      
+    }
+    
+    .steps img {
+    width: 100%;      
+    height: auto;     
+    max-width: 400px;  
+}
+
+}
