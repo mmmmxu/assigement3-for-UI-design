@@ -205,6 +205,40 @@
 .back-button button:hover {
     background-color: #0056b3;
 }
+
+ @media (max-width: 768px) {
+    .container, .search-container input[type="text"], .navigation button {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .icon img {
+        width: 50px;
+    }
+
+    .navbar ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: block; 
+        margin-top: 5px;
+    }
+
+    .payment-method button, .back-button button {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .order-details .item, .contact-details ul, .pay-details ul {
+        text-align: center;  
+    }
+}
+
+
+    
     </style>
 </head>
 <body>
