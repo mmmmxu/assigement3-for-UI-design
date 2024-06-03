@@ -175,6 +175,11 @@ body {
     .icon img, .steps img , .add-new img{
         max-width: 100%;
     }
+    .navigation button {
+        width: 200px;    
+        padding: 15px;   
+    }
+
 
 }
 
