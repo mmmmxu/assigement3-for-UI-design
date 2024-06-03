@@ -159,11 +159,6 @@ body {
 }
 
 
-.unique-image img{
-    width: 75px; 
-    height: 93px; 
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .product-images img {
