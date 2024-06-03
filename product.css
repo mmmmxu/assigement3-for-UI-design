@@ -352,7 +352,7 @@ body {
 }
 
 .details-container {
-    margin-up: 20px;
+    margin-top: 40px; 
     background: #fff;
     width: 80%;
     margin: 0 auto;
