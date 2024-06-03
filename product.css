@@ -152,20 +152,20 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center; /* Center align the smaller images */
+    align-items: center;
     width: 75px;
-    height: 93px;  
+    height: 444px;  
 }
 
 .product-images img {
-    width: auto; 
-    height: auto; /* Maintain aspect ratio */
+    width: 75px; 
+    height: 93px; 
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .product-images img {
-        width: 50px; /* Smaller width on mobile devices */
+        width: 50px; 
     }
 }
 
