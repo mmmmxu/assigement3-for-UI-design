@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Address</title>
     <link rel="stylesheet" href="select_address_style.css">
 </head>
 <body>
+    <header class="top-nav">
+        <div class="container">
+            <div class="logo">
+                <img class="logo1" src="folder/logo.png">
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search..." oninput="filterProducts()">
+            </div>
+            <nav class="navbar">
+                <ul class="list">
+                    <li><a href="shopping list.html">Products</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <img src="folder/Vector.png"> 
+                <img src="folder/Cart1.png">
+                <img src="folder/User.png">
+            </div>
+        </div>
+    </header>
     <div class="steps">
-        <span class="step active">Step 1 Address</span>
-        <span class="step">Step 2 Shipping</span>
+        <img class="head" src="folder/Steps.png">
     </div>
+
     <div class="address-container">
         <h2>Select Address</h2>
         <div class="address">
@@ -32,12 +55,14 @@
             <button class="remove">✕</button>
         </div>
         <div class="add-new">
-            <button class="add-button">+ Add New Address</button>
+            <img class="icon1" src="folder/Line+Icon.png" >
+            <button class="add-button">Add New Address</button>
         </div>
+
     </div>
     <div class="navigation">
-        <button class="back">Back</button>
-        <button class="next">Next</button>
+        <button onclick="location.href='product.html';"class="back">Back</button>
+        <button onclick="location.href='shipping.html';"class="next">Next</button>
     </div>
 </body>
 </html>

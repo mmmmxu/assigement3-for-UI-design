@@ -32,21 +32,26 @@
                 <img src="folder/User.png">
             </div>
         </div>
+        <div class="breadcrumb">
+            <a href="UX A3-homepage.html">Home</a><span> &gt; </span>
+            <a href="shopping list.html">Smartphones</a><span> &gt; </span>
+            <a href="#">Apple</a><span> &gt; </span>
+            <a href="#">iPhone 14 Pro Max</a>
+        </div>
     </header> 
     
-    
-    <div class="breadcrumb">
-        <a href="UX A3-homepage.html">Home</a>
-        <a href="shopping list.html">Smartphones</a>
-        <a href="#">Apple</a>
-        <a href="#">iphones iPhone 14 Pro Max</a> 
-    </div>
+
+
 
     <div class="product-detail">
         <div class="product-images">
+            <img src="folder/image_small.png" alt="iPhone View">
             <img src="folder/iphone-side-view.png" alt="iPhone Side View">
             <img src="folder/iphone-back-view.png" alt="iPhone Back View">
             <img src="folder/iphone-front-view.png" alt="iPhone Front View">
+        </div>
+        <div class="product-image">
+            <img src="folder/Image_big.png" alt="iPhone">
         </div>
         <div class="product-info">
             <h1>Apple iPhone 14 Pro Max</h1>
@@ -64,26 +69,24 @@
                 <button>512GB</button>
                 <button>1TB</button>
             </div>
-            <div class="specs">
-                <div class="spec-item"><img src="screen-icon.png" alt="Screen Size"> 6.7" Screen</div>
-                <div class="spec-item"><img src="chip-icon.png" alt="CPU"> Apple A16 Bionic</div>
-                <div class="spec-item"><img src="screen-icon.png" alt="Screen Size"> 6</div>
-                <div class="spec-item"><img src="chip-icon.png" alt="Chip Type"> 48-12 -12 MP</div>
-                <div class="spec-item"><img src="screen-icon.png" alt="Screen Size"> 12 MP</div>
-                <div class="spec-item"><img src="chip-icon.png" alt="Chip Type"> 4323 mAh</div>                
-
+            <div class="category">
+                <div class="spec-item"><img src="folder/Screensize.png" alt="Screen Size"> 6.7" Screen</div>
+                <div class="spec-item"><img src="folder/smartphone-rotate-2-svgrepo-com 2.png" alt="CPU"> Apple A16 Bionic</div>
+                <div class="spec-item"><img src="folder/smartphone-rotate-2-svgrepo-com 2-1.png" alt="Number of Cores"> 6</div>
+                <div class="spec-item"><img src="folder/smartphone-rotate-2-svgrepo-com 2-2.png" alt="Main camera"> 48-12 -12 MP</div>
+                <div class="spec-item"><img src="folder/smartphone-rotate-2-svgrepo-com 2-3.png" alt="Front - camera"> 12 MP</div>
+                <div class="spec-item"><img src="folder/smartphone-rotate-2-svgrepo-com 2-4.png" alt="Battery capacity"> 4323 mAh</div>                
             </div>
+            
             <p class="description">
                 Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras
             </p>
             <div class="actions">
                 <button>Add to Wishlist</button>
-                <button>Add to Cart</button>
+                <button onclick="location.href='shoppingcart.html'" >Add to Cart</button>
             </div>
             <div class="delivery-info">
-                <span>Free Delivery 1-2 days</span>
-                <span>In Stock Today</span>
-                <span>Guaranteed 1 year</span>
+                <img src="folder/Icons.png" alt="icon">
             </div>
         </div>
     </div>
@@ -114,10 +117,13 @@
         <button class="view-more">View More</button>
     </div>
 
-    <section class="product-grid">
-        <header>
-            <div>Related Products</div>           
-        </header>
+    <section>
+    <div class="itemshow">
+        <div class="itembutton">
+            <button>Related Products</button>
+         </div>
+    </div>
+     <div class="productcontainer">   
         <div class="product-grid">
             <div class="product-item">
                 <img src="folder/purple.png" alt="Product 1">
@@ -148,8 +154,15 @@
                 <i class="fa-regular fa-heart"></i>
             </div>
         </div>
+     </div>
     </section>
-
-
+    <script>
+        document.querySelectorAll('.storage-options button').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.storage-options button').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>

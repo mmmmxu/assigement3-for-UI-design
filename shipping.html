@@ -5,40 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping Method</title>
     <link rel="stylesheet" href="shipping_style.css">
+    
 </head>
 <body>
+    <header class="top-nav">
+        <div class="container">
+            <div class="logo">
+                <img class="logo1" src="folder/logo.png">
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search..." oninput="filterProducts()">
+            </div>
+            <nav class="navbar">
+                <ul class="list">
+                    <li><a href="shopping list.html">Products</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <img src="folder/Vector.png"> 
+                <img src="folder/Cart1.png">
+                <img src="folder/User.png">
+            </div>
+        </div>
+    </header>
     <div class="steps">
-        <span class="step">Step 1 Address</span>
-        <span class="step active">Step 2 Shipping</span>
+        <img class="head" src="folder/Steps-1.png">
     </div>
-    <div class="shipping-container">
-        <h2>Shipment Method</h2>
-        <div class="method">
-            <input type="radio" id="free" name="shipping" checked>
-            <label for="free">
+<div class="shipping-container">
+    <h2>Shipment Method</h2>
+    <div class="method">
+        <input type="radio" id="free" name="shipping" checked>
+        <label for="free">
+            <div class="method-details">
                 <span>Free</span>
                 <p>pick up in store</p>
-            </label>
-        </div>
-        <div class="method">
-            <input type="radio" id="fast" name="shipping">
-            <label for="fast">
+                <div class="date">17 Oct, 2023</div>
+            </div>
+        </label>
+    </div>
+    <div class="method">
+        <input type="radio" id="fast" name="shipping">
+        <label for="fast">
+            <div class="method-details">
                 <span>$8.50</span>
                 <p>Get your delivery as soon as possible</p>
-            </label>
-        </div>
-        <div class="method">
-            <input type="radio" id="schedule" name="shipping">
-            <label for="schedule">
+                <div class="date">1 Oct, 2023</div>
+            </div>
+        </label>
+    </div>
+    <div class="method">
+        <input type="radio" id="schedule" name="shipping">
+        <label for="schedule">
+            <div class="method-details">
                 <span>Schedule</span>
                 <p>Pick a date when you want to get your delivery</p>
                 <button class="select-date">Select Date</button>
-            </label>
-        </div>
+            </div>
+        </label>
     </div>
+</div>
+
     <div class="navigation">
-        <button class="back">Back</button>
-        <button class="next">Next</button>
+        <button onclick="location.href='select_address.html';"class="back">Back</button>
+        <button onclick="location.href='confirmation.html';"class="next">Next</button>
     </div>
 </body>
 </html>
