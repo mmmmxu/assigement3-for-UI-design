@@ -175,6 +175,12 @@ body {
     .icon img, .steps img , .add-new img{
         max-width: 100%;
     }
+    .navigation {
+        width: 100%;      
+        padding: 0 10px;  
+        margin: 0 auto;  
+        
+    }
     .back, .next {
         width: 100%;      
     }
