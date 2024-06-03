@@ -173,7 +173,7 @@ body {
     }
 
     .icon img, .steps img , .add-new img{
-        max-width: 85%;
+        max-width: 100%;
     }
 
 }
